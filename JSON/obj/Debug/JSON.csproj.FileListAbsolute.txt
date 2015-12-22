@@ -1,0 +1,6 @@
+C:\Users\jhohenstein\workspace\app_unity_LibrariesOutsideUnity\Libraries\lib_unity_JSON\JSON\bin\Debug\JSON.dll
+C:\Users\jhohenstein\workspace\app_unity_LibrariesOutsideUnity\Libraries\lib_unity_JSON\JSON\bin\Debug\JSON.pdb
+C:\Users\jhohenstein\workspace\app_unity_LibrariesOutsideUnity\Libraries\lib_unity_JSON\JSON\bin\Debug\UnityEngine.dll
+C:\Users\jhohenstein\workspace\app_unity_LibrariesOutsideUnity\Libraries\lib_unity_JSON\JSON\obj\Debug\JSON.csprojResolveAssemblyReference.cache
+C:\Users\jhohenstein\workspace\app_unity_LibrariesOutsideUnity\Libraries\lib_unity_JSON\JSON\obj\Debug\JSON.dll
+C:\Users\jhohenstein\workspace\app_unity_LibrariesOutsideUnity\Libraries\lib_unity_JSON\JSON\obj\Debug\JSON.pdb
