@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FFDFE14B-FF92-4554-A720-2A32BC6286A5}</ProjectGuid>
+    <ProjectGuid>{F35EF70F-D9DE-4577-A395-C208542F8EC5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JSON</RootNamespace>
-    <AssemblyName>JSON</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <RootNamespace>JSON.Tests</RootNamespace>
+    <AssemblyName>JSON.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,40 +29,48 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <PostBuildEvent Condition=" '$(OS)' == 'Unix' ">cp -R "$(TargetDir)/*" "$(SolutionDir)/Assets/Binaries"</PostBuildEvent>
-    <PostBuildEvent Condition=" '$(OS)' != 'Unix' ">xcopy "$(TargetDir)*" "$(SolutionDir)Assets\Binaries" /Y /E /I</PostBuildEvent>
-  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\NUnit.3.0.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
       <HintPath>..\..\..\packages\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IJSON.cs" />
-    <Compile Include="LitJSON\Json.cs" />
-    <Compile Include="LitJSON\JsonMapperSimple.cs" />
-    <Compile Include="LitJSON\JsonParseException.cs" />
-    <Compile Include="LitJSON\IJsonWrapper.cs" />
-    <Compile Include="LitJSON\JsonAttribute.cs" />
-    <Compile Include="LitJSON\JsonData.cs" />
-    <Compile Include="LitJSON\JsonException.cs" />
-    <Compile Include="LitJSON\JsonMapper.cs" />
-    <Compile Include="LitJSON\JsonMockWrapper.cs" />
-    <Compile Include="LitJSON\JsonReader.cs" />
-    <Compile Include="LitJSON\JsonWriter.cs" />
-    <Compile Include="LitJSON\Lexer.cs" />
-    <Compile Include="LitJSON\ParserToken.cs" />
-    <Compile Include="JSON.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TestClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Resources\JSONSLotsFarmTest.json" />
+    <EmbeddedResource Include="Resources\JSONSlotsGameDefaultsTest.json" />
+    <EmbeddedResource Include="Resources\JSONSlotsPayLineTest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JSON\JSON.csproj">
+      <Project>{ffdfe14b-ff92-4554-a720-2a32bc6286a5}</Project>
+      <Name>JSON</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\JSONLPVarTest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,456 @@
+{
+    "_schema" : {
+        "Banner Image" : {
+            "_type" : "File"
+        },
+        "Gem Image" : {
+            "_type" : "File"
+        },
+        "Image" : {
+            "_type" : "File"
+        },
+        "GEMICON01" : {
+            "_type" : "File"
+        },
+        "GEMICON02" : {
+            "_type" : "File"
+        },
+        "GEMICON03" : {
+            "_type" : "File"
+        },
+        "GEMICON04" : {
+            "_type" : "File"
+        },
+        "GEMICONMany" : {
+            "_type" : "File"
+        },
+        "MOVESICON" : {
+            "_type" : "File"
+        },
+        "LIVEICON" : {
+            "_type" : "File"
+        },
+        "WEEDKILLERICON" : {
+            "_type" : "File"
+        },
+        "MYSTERYICON" : {
+            "_type" : "File"
+        },
+        "KNIFEICON" : {
+            "_type" : "File"
+        },
+        "Icon" : {
+            "_type" : "File"
+        },
+        "Calendar 01" : {
+            "_type" : "ExtFile"
+        },
+        "Calendar 02" : {
+            "_type" : "ExtFile"
+        },
+        "Calendar 03" : {
+            "_type" : "ExtFile"
+        },
+        "Calendar 04" : {
+            "_type" : "ExtFile"
+        },
+        "Level Manager" : {
+            "_type" : "ExtFile"
+        },
+        "Color" : {
+            "_list" : ["Red", "Orange", "Blue", "Green", ""]
+        }
+    },
+    
+     "Data":{
+	    "Gate Manager" : {
+	    	"Gate 01":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		},
+	    	"Gate 02":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		},
+	    	"Gate 03":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		},
+	    	"Gate 04":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		},
+	    	"Gate 05":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		},
+	    	"Gate 06":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		},
+	    	"Gate 07":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		},
+	    	"Gate 08":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		},
+	    	"Gate 09":{
+	     	 	"Hammer" : 3,
+	     		"Star" : 3,
+	     		"Gems" : 49
+	     		}
+	     	},
+	     	
+     	"Lives" : {
+     		"Hud Prompt" : {
+     			"Gems" : 75, 
+     			"Lives" : 5
+     			},
+     		"Life Timer" : {
+     			"Timer" : 20, 
+     			"Lives" : 5
+     			},
+     		"Life Cap" : 5,
+     		"Send Timer" : 24
+     		},
+     		
+     	"Levels" : {
+     		"Level Lose" : {
+     			"Extra Moves": 49,
+     			"Extra Time": 49,
+     			"Skip Level": 100,
+     			"Skip Prompt": 8
+	     		},
+     		"Pre-equip Screen" : {
+     			"Power Ups 1": true,
+     			"Power Ups 1 List": "knife,dye",
+     			"Power Ups 2": false,
+     			"Power Ups 2 List": ""
+	     		},
+     		"Level Manager" : "LevelManager"
+     		},
+     		
+    	"Power Ups" : {
+    		"Knife" : {
+    	 		"Quantity" : 3,
+	    		"Gems" : 75
+    			},
+    		"Potion" : {
+    	 		"Quantity" : 4,
+	    		"Gems" : 75
+    			},
+    		"Weed Killer" : {
+    	 		"Quantity" : 1,
+	    		"Gems" : 100
+    			}
+     		},
+
+        "Store" : {
+        	"Design" : {
+        		"Title" : {
+        			"Text" : "Store",
+        			"Image" : ""
+        			}
+     			},
+        	"Layout" : {
+        		"Order 01" : "GEMS_001",
+        		"Order 02" : "GEMS_002",
+        		"Order 03" : "GEMS_003",
+        		"Order 04" : "GEMS_004",
+        		"Order 05" : "GEMS_005",
+        		"Order 06" : "GEMS_006",
+        		"Order 07" : "GEMS_007",
+        		"Order 08" : "FREE_V4VC"
+			    },
+       		"Promo Bundles" : {
+	        	"Enabled": true,
+	        	"Package" : "GEM_000",
+	        	"Gems" : 82,
+	        	"Banner Image" : "",
+	        	"Bonus" : 50,
+	        	"Bonus Color" : "Red",
+	        	"Tag" : {
+		        	"Enabled" : true,
+		        	"Image" : "",
+		        	"Text" : "SPECIAL"
+		        	},
+	        	"Buy Color" : "Green",
+	        	"Gem Image" : ""
+	        	},
+	       	 "Package Config" : {
+	       	 	"Package 01" : {
+	       	 		"Package" : "GEMS_001",
+	       	 		"Gems": 110,
+	       	 		"Banner Image" : "",
+	       	 		"Bonus" : 0,
+	       	 		"Bonus Color" : "Orange",
+	       	 		"Tag" : {
+		       	 		"Enabled" : false,
+		       	 		"Image" : "",
+	       	 			"Text" : "Deal"
+	       	 			},
+	       	 		"Buy Color" : "Green",
+	       	 		"Gem Image" : ""
+	       	 		},
+	       	 	"Package 02" : {
+	       	 		"Package" : "GEMS_003",
+	       	 		"Gems": 290,
+	       	 		"Banner Image" : "",
+	       	 		"Bonus" : 5,
+	       	 		"Bonus Color" : "Orange",
+	       	 		"Tag" : {
+		       	 		"Enabled" : false,
+		       	 		"Image" : "",
+	       	 			"Text" : "Deal"
+	       	 			},
+	       	 		"Buy Color" : "Green",
+	       	 		"Gem Image" : ""
+	       	 		},
+	       	 	"Package 03" : {
+	       	 		"Package" : "GEMS_005",
+	       	 		"Gems": 930,
+	       	 		"Banner Image" : "",
+	       	 		"Bonus" : 10,
+	       	 		"Bonus Color" : "Orange",
+	       	 		"Tag" : {
+		       	 		"Enabled" : false,
+		       	 		"Image" : "",
+	       	 			"Text" : "Deal"
+	       	 			},
+	       	 		"Buy Color" : "Green",
+	       	 		"Gem Image" : ""
+	       	 		},
+	       	 	"Package 04" : {
+	       	 		"Package" : "GEMS_007",
+	       	 		"Gems": 1585,
+	       	 		"Banner Image" : "",
+	       	 		"Bonus" : 15,
+	       	 		"Bonus Color" : "Orange",
+	       	 		"Tag" : {
+		       	 		"Enabled" : false,
+		       	 		"Image" : "",
+	       	 			"Text" : "Deal"
+	       	 			},
+	       	 		"Buy Color" : "Green",
+	       	 		"Gem Image" : ""
+	       	 		},
+	       	 	"Package 05" : {
+	       	 		"Package" : "GEMS_008",
+	       	 		"Gems": 3300,
+	       	 		"Banner Image" : "",
+	       	 		"Bonus" : 25,
+	       	 		"Bonus Color" : "Orange",
+	       	 		"Tag" : {
+		       	 		"Enabled" : false,
+		       	 		"Image" : "",
+	       	 			"Text" : "Deal"
+	       	 			},
+	       	 		"Buy Color" : "Green",
+	       	 		"Gem Image" : ""
+	       	 		},
+	       	 	"Package 06" : {
+	       	 		"Package" : "GEMS_009",
+	       	 		"Gems": 7150,
+	       	 		"Banner Image" : "",
+	       	 		"Bonus" : 40,
+	       	 		"Bonus Color" : "Orange",
+	       	 		"Tag" : {
+		       	 		"Enabled" : false,
+		       	 		"Image" : "",
+	       	 			"Text" : "Deal"
+	       	 			},
+	       	 		"Buy Color" : "Green",
+	       	 		"Gem Image" : ""
+	       	 		}
+		        }
+       	 	},
+	    "V4VC" : {
+	    	"Configurations" : {
+	    		"Starting" : 6,
+	    		"Change" : 1,
+	    		"Gem Cap" : 8,
+	    		"Max View" : 4
+	    	},
+	    	"No Ad" : {
+	    		"Frequency" : 3,
+	        	"Gems" : 1
+	    	},
+    	    "Monkey" : {
+    	    	"V4VC Map": {
+    	    		"Enabled" : true,
+    	    		"One Click" : false,
+		    		"Frequency" : 2,
+		    		"Sign" : "FREE Rewards!",
+	    			"Icon" : "",
+	    			"Time" : 30
+	    	    	},
+    		    "V4VC Level" : {
+    	    		"Enabled" : true,
+    	    		"One Click" : false,
+		    		"Frequency" : 2,
+		    		"Text" : "FREE Rewards!",
+	    			"Icon" : "",
+	    			"Time" : 30
+    		    }
+    		}
+        },
+        "Daily Calendar" : {
+    		"Configuration" : {
+        		"Frequency" : 1,
+	    		"Reset" : 25,
+	    		"Calendar 01" : "Calendar01",
+	    		"Calendar 02" : "Calendar02",
+	    		"Calendar 03" : "Calendar03",
+	    		"Calendar 04" : "Calendar04"
+	    		},
+	    	"MOVESICON"   	: "",
+	    	"LIVEICON" 		: "",
+	    	"WEEDKILLERICON": "",
+	    	"KNIFEICON"   	: "",
+	    	"MYSTERYICON"   : "",
+	    	"GEMICON01" 	: "",
+	    	"GEMICON02" 	: "",
+	    	"GEMICON03" 	: "",
+	    	"GEMICON04" 	: "",
+	    	"GEMICONMany" 	: ""
+        	},
+		"Seed Currency" : {
+			"Seed" : 169
+			},
+        "Engagement" : {
+        	"Send Lives" : {
+        		"Frequency" : 10,
+        		"Trigger" : "AppLaunch",
+        		"Trottle" : 24,
+        		"Priority" : ""
+        	},
+        	"Inbox" : {
+        		"Capacity" : 50,
+        		"Max Time" : 7,
+        		"Lives Time" : 168,
+        		"Power Ups Time" : 168,
+        		"Animal Time" : 168
+        	},
+		    "Announcements" : {
+		    	"Layout" : "Calendar",
+			    "Calendar" : {
+			    		"Banner Image" : ""
+			    	},
+			    "Cross Promo" : {
+			    		"Action" : "Slots",
+			    		"Banner Image" : ""
+			    	},
+			    "Event 01" : {
+			    		"Banner Image" : "",
+			    		"Body" : "Lorem lpsum"
+			    	},
+			    "Event 02" : {
+			    		"Banner Image" : "",
+			    		"Body" : "Lorem lpsum"
+			    	},
+			    "Event 03" : {
+			    		"Banner Image" : "",
+			    		"Body" : "Lorem lpsum"
+			    	},
+			    "Event 04" : {
+			    		"Banner Image" : "",
+			    		"Body" : "Lorem lpsum"
+			    	},
+			    "Game Link 01" : {
+			    		"Banner Image" : "",
+			    		"Action" : ""
+			    	},
+			    "Game Link 02" : {
+			    		"Banner Image" : "",
+			    		"Action" : ""
+			    	},
+			    "Game URL 01" : {
+			    		"Banner Image" : "",
+			    		"Action" : ""
+			    	}
+			    },
+			"Level Boom Rotator" : {
+				"Layout" : "V4VC",
+				"Rotation" : 5,
+				"Store" : {
+					"Banner Image" : "",
+					"Copy" : "Show Now!"
+				},
+				"V4VC" : {
+					"Banner Image" : "",
+					"Copy" : "Watch video to get FREE Rewards!",
+    	    		"One Click" : false
+				},
+				"Offer" : {
+					"Banner Image" : "",
+					"Copy" : "Special Offer $0.99 82 Gems",
+					"Package" : "GEM_000",
+					"Gems" : 82
+				},
+				"Event" : {
+					"Banner Image" : "",
+					"Copy" : "Special Event"
+				}
+			},
+			"Gift Drop" : {
+					"One Time Level" : {
+						"Enabled" : false,
+						"Location" : 10,
+						"Item" : "Gems",
+						"Quantity" : 5
+					},
+					"One Time HUD" : {
+						"Enabled" : false,
+						"Item" : "Gems",
+						"Quantity" : 5
+					},
+					"Persistant Level 01" : {
+						"Enabled" : false,
+						"Location" : 10,
+						"Item" : "Gems",
+						"Quantity" : 5
+					},
+					"Persistant Level 02" : {
+						"Enabled" : false,
+						"Location" : 10,
+						"Item" : "Gems",
+						"Quantity" : 5
+					},
+					"Persistant Level 03" : {
+						"Enabled" : false,
+						"Location" : 10,
+						"Item" : "Gems",
+						"Quantity" : 5
+					},
+					"Persistant Level 04" : {
+						"Enabled" : false,
+						"Location" : 10,
+						"Item" : "Gems",
+						"Quantity" : 5
+					},
+					"Persistant Gate 01" : {
+						"Enabled" : false,
+						"Location" : 10,
+						"Item" : "Gems",
+						"Quantity" : 5
+					},
+					"Persistant Gate 02" : {
+						"Enabled" : false,
+						"Location" : 10,
+						"Item" : "Gems",
+						"Quantity" : 5
+					}
+				}
+		    }
+  	}
+}

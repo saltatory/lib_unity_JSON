@@ -1,0 +1,132 @@
+{
+    "Machine" : {
+        "color": "38,61,10",
+        "Name": "Farm",
+        "ID": "11",
+        "UnlockLevel": "1",
+        "MinBet": "30",
+        "MaxLines": "15",
+        "Symbols": {
+            "Symbol0": {
+                "MatchMultipliers": "0,0,2.1,11,55",
+                "Weight": "90"
+            },
+            "Symbol1": {
+                "MatchMultipliers": "0,0,3.3,17,60",
+                "Weight": "86"
+            },
+            "Symbol2": {
+                "MatchMultipliers": "0,0,4.4,22,110",
+                "Weight": "115"
+            },
+            "Symbol3": {
+                "MatchMultipliers": "0,0,5.5,28,138",
+                "Weight": "100"
+            },
+            "Symbol4": {
+                "MatchMultipliers": "0,0,6.6,33,165",
+                "Weight": "100"
+            },
+            "Symbol5": {
+                "MatchMultipliers": "0,0,7.7,39,193",
+                "Weight": "60"
+            },
+            "Symbol6": {
+                "MatchMultipliers": "0,0,8.8,41,220",
+                "Weight": "32"
+            },
+            "Symbol7": {
+                "MatchMultipliers": "0,0,9.9,50,220",
+                "Weight": "14"
+            },
+            "Symbol8": {
+                "MatchMultipliers": "0,0,11,55,275",
+                "Weight": "10"
+            }
+        },
+        "SpecialSymbols": {
+            "JackpotSymbol": {
+                "SpecialWeight": "10",
+                "ShowChance": "0.5",
+                "WinChance": "0.0575",
+                "PayoutMultiplier": "100"
+            },
+            "ScatterSymbol": {
+                "SpecialWeight": "15",
+                "ShowChance": "0.6",
+                "WinChance": "0.036,0.027,0.0117",
+                "PayoutMultiplier": "0"
+            },
+            "MinigameSymbol": {
+                "SpecialWeight": "30",
+                "ShowChance": "0.5",
+                "WinChance": "0.06",
+                "PayoutMultiplier": "10"
+            },
+            "HotstreakSymbol": {
+                "SpecialWeight": "60,50,24,24,40",
+                "ShowChance": "0.8,0.8,0.8,0.8,0.8",
+                "WinChance": "0.36,0.3,0.08,0.08,0.08",
+                "PayoutMultiplier": "0"
+            },
+            "XPSymbol": {
+                "SpecialWeight": "90",
+                "ShowChance": "1",
+                "WinChance": "1",
+                "NumWinningSymbolsOdds": "0.3,0.25,0.2,0.15,0.1",
+                "PayoutMultiplier": "0.835"
+            },
+            "WildSymbol": {
+                "OccurrenceRate": "0.05"
+            },
+            "SpecialSymbolMasterTuning": "1.002"
+        },
+        "CollectionPieces": {
+            "CollectionPiece0": {
+                "Width": "0.2840",
+                "X": "0.3712",
+                "Y": "0.5100",
+                "Experience": "100"
+            },
+            "CollectionPiece1": {
+                "Width": "0.2409",
+                "X": "0.8386",
+                "Y": "0.4502",
+                "Experience": "125"
+            },
+            "CollectionPiece2": {
+                "Width": "0.1106",
+                "X": "0.1579",
+                "Y": "0.4887",
+                "Experience": "150"
+            },
+            "CollectionPiece3": {
+                "Width": "0.3318",
+                "X": "0.2188",
+                "Y": "0.7894",
+                "Experience": "175"
+            },
+            "CollectionPiece4": {
+                "Width": "0.1732",
+                "X": "0.4515",
+                "Y": "0.5915",
+                "Experience": "200"
+            },
+            "CollectionPiece5": {
+                "Width": "0.2906",
+                "X": "0.8149",
+                "Y": "0.7981",
+                "Experience": "225"
+            },
+            "CollectionPiece6": {
+                "Width": "0.3068",
+                "X": "0.6181",
+                "Y": "0.7621",
+                "Experience": "250"
+            }
+        },
+        "BetMultiplierMinLimit": "4",
+        "BetMultipliers": "1,2,3,4,5,10,15,20,30,40",
+        "CollectionPieceOdds": ".50,.50,.50,.50,.50,.50,.50"
+    }
+}
