@@ -33,6 +33,8 @@
   <PropertyGroup>
     <PostBuildEvent Condition=" '$(OS)' == 'Unix' ">cp -R "$(TargetDir)/*" "$(SolutionDir)/Assets/Binaries"</PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Unix' ">xcopy "$(TargetDir)*" "$(SolutionDir)Assets\Binaries" /Y /E /I</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' == 'Unix' ">rm "$(SolutionDir)/Assets/Binaries/Unity*"</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' != 'Unix' ">IF EXIST "$(SolutionDir)Assets\Binaries\Unity*.*" del "$(SolutionDir)Assets\Binaries\Unity*.*" /Y /E /I</PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
