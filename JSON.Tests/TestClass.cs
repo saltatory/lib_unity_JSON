@@ -42,7 +42,6 @@ namespace Mobilityware.JSON.Tests
 
 
         [Test]
-        [MaxTime(1000)]
         public void TestParseLPVar()
         {
             string name = "JSON.Tests.Resources.JSONLPVarTest.json";
@@ -58,8 +57,8 @@ namespace Mobilityware.JSON.Tests
                 List<object> list = (List<object>)color["_list"];
                 if ((string)(list[2]) == "Blue")
                 {
-                    Assert.Pass();
-                }
+					// nothing
+				}
                 else {
                     Assert.Fail();
                 }
@@ -67,7 +66,6 @@ namespace Mobilityware.JSON.Tests
         }
 
         [Test]
-        [MaxTime(1000)]
         public void TestParseSlotsGameInfoDefault()
         {
             string name = "JSON.Tests.Resources.JSONSlotsGameDefaultsTest.json";
@@ -82,7 +80,7 @@ namespace Mobilityware.JSON.Tests
                     int score = (int)(levels["13"]);
                     if (score == 70000)
                     {
-                        Assert.Pass();
+                        // nothing
                     }
                     else {
                         Assert.Fail();
@@ -92,7 +90,6 @@ namespace Mobilityware.JSON.Tests
         }
 
         [Test]
-        [MaxTime(1000)]
         public void TestParseSlotsPayline()
         {
             string name = "JSON.Tests.Resources.JSONSlotsPayLineTest.json";
@@ -110,7 +107,7 @@ namespace Mobilityware.JSON.Tests
 
                 if (payline.Color.Red == 0.184f)
                 {
-                    Assert.Pass();
+                    //nothing
                 }
                 else {
                     Assert.Fail();
@@ -119,7 +116,6 @@ namespace Mobilityware.JSON.Tests
         }
 
         [Test]
-        [MaxTime(1000)]
         public void TestParseSlotsPayline2()
         {
             TestPayLine2 tp = new TestPayLine2();
@@ -130,7 +126,7 @@ namespace Mobilityware.JSON.Tests
 
             if (tp2.Color.Blue == tp.Color.Blue && tp2.Positions == null)
             {
-                Assert.Pass();
+                //nothing
             }
             else {
                 Assert.Fail();
@@ -138,7 +134,6 @@ namespace Mobilityware.JSON.Tests
         }
 
         [Test]
-        [MaxTime(1000)]
         public void TestParseNestedJSON()
         {
             TestPayLine2 parent = new TestPayLine2();
@@ -152,7 +147,7 @@ namespace Mobilityware.JSON.Tests
 
             if (child2.Color.Blue == child.Color.Blue && parent2.Color.Red == parent.Color.Red)
             {
-                Assert.Pass();
+                //Nothing
             }
             else {
                 Assert.Fail();
